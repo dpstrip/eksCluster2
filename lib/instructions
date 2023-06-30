@@ -1,0 +1,2 @@
+There is a directory missing called assets.  This folder contains the kubectl executable that is needed to be deployed to the bastion server.
+The cdk.json file in the lib directory needes to be moved to a directory outside the lib directory.  Its neds to be at a higher directory level.
