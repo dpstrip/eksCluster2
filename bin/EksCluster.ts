@@ -1,8 +1,7 @@
-#!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
 import { VpcStack } from '../lib/vpc-stack';
-import { EksClusterStack } from '../lib/eksCluster-stack';
+import { BClusterStack } from '../lib/b_cluster-stack';
 
 const env = { 
   region: process.env.CDK_DEFAULT_REGION,
@@ -16,4 +15,4 @@ const vpc = new VpcStack(
   { env })
   .vpc;
   
-new EksClusterStack(app, 'dpstripEKS-Stack1', { env, vpc });
+new BClusterStack(app, 'dpstripEKS-Stack6', { env, vpc });
