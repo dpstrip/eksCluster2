@@ -41,7 +41,3 @@ export class EksClusterStack extends cdk.Stack {
     // allow bastion to access the cluster
     this.cluster.connections.allowFrom(this.host, ec2.Port.allTcp());
   }
-
-
-
-}
